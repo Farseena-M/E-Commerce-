@@ -1,28 +1,48 @@
 import product1 from './Assets/img1.jpg'
-import product2 from './Assets/img2.webp'
-import product3 from './Assets/img3.webp'
-import product4 from './Assets/img4.webp'
-import product5 from './Assets/img5.webp'
-import product6 from './Assets/img6.webp'
-import product7 from './Assets/img7.webp'
-import product8 from './Assets/img8.webp'
-import product9 from './Assets/img9.webp'
-import product10 from './Assets/img10.webp'
-import product11 from './Assets/img11.webp'
-import product12 from './Assets/img12.webp'
-import product13 from './Assets/img13.webp'
-import product14 from './Assets/img14.webp'
-import product15 from './Assets/img15.webp'
-import product16 from './Assets/img16.webp'
-import product17 from './Assets/img17.webp'
-import product18 from './Assets/img18.webp'
-import product19 from './Assets/img19.webp'
-import product20 from './Assets/img20.webp'
-import product21 from './Assets/img21.webp'
-import product22 from './Assets/img22.webp'
-import product23 from './Assets/img23.webp'
-import product24 from './Assets/img24.webp'
-import product25 from './Assets/img25.webp'
+import product2 from './Assets/img2.jpg'
+import product3 from './Assets/img3.jpg'
+import product4 from './Assets/img4.jpg'
+import product5 from './Assets/img5.jpg'
+import product6 from './Assets/img6.jpg'
+import product7 from './Assets/img7.jpg'
+import product8 from './Assets/img8.jpg'
+import product9 from './Assets/img9.jpg'
+import product10 from './Assets/img10.jpg'
+import product11 from './Assets/img11.jpg'
+import product12 from './Assets/img12.jpg'
+import product13 from './Assets/img13.jpg'
+import product14 from './Assets/img14.jpg'
+import product15 from './Assets/img15.jpg'
+import product16 from './Assets/img16.jpg'
+import product17 from './Assets/img17.jpg'
+import product18 from './Assets/img18.jpg'
+import product19 from './Assets/img19.jpg'
+import product20 from './Assets/img20.jpg'
+import product21 from './Assets/img21.jpg'
+import product22 from './Assets/img22.jpg'
+import product23 from './Assets/img23.jpg'
+import product24 from './Assets/img24.jpg'
+import product25 from './Assets/img25.jpg'
+import product26 from './Assets/img26.jpg'
+import product27 from './Assets/img27.jpg'
+import product28 from './Assets/img28.jpg'
+import product29 from './Assets/img29.jpg'
+import product30 from './Assets/img30.jpg' 
+import product31 from './Assets/img31.jpg' 
+import product32 from './Assets/img32.jpg' 
+import product33 from './Assets/img33.jpg' 
+import product34 from './Assets/img34.jpg' 
+import product35 from './Assets/img35.jpg' 
+import product36 from './Assets/img36.jpg' 
+import product37 from './Assets/img37.jpg' 
+import product38 from './Assets/img38.jpg' 
+import product39 from './Assets/img39.jpg' 
+import product40 from './Assets/img40.jpg' 
+import product41 from './Assets/img41.jpg' 
+import product42 from './Assets/img42.jpg' 
+import product43 from './Assets/img43.jpg' 
+import product44 from './Assets/img44.jpg' 
+import product45 from './Assets/img45.jpg' 
 export const PRODUCTS=[
     {
         id:1,
@@ -32,146 +52,267 @@ export const PRODUCTS=[
     },
     {
         id:2,
-        productName:'Bed sized bedding set',
-        Price:'$299',
+        productName:'Crawling Pads',
+        Price:'$499',
         productImage:product2
     },
     {
         id:3,
-        productName:'BUMTUM baby diaper pants',
-        Price:'$449',
+        productName:'Infant Swing',
+        Price:'$1540',
         productImage:product3
     },
     {
         id:4,
-        productName:'Johsons baby soap',
-        Price:'$280',
+        productName:'Animal Towel',
+        Price:'$480',
         productImage:product4
     },
     {
         id:5,
-        productName:'Himalaya baby powder',
-        Price:'$541',
+        productName:'Baby Doll Toys',
+        Price:'$341',
         productImage:product5
     },
     {
         id:6,
-        productName:'Waterproof bed protector ',
+        productName:'Ginbear Plates ',
         Price:'$260 ',
         productImage:product6
     },
     {
         id:7,
-        productName:'Bedding set',
+        productName:'Animal Hooded Towel',
         Price:'$350',
         productImage:product7
     },
     {
         id:8,
-        productName:'Cotton swing chair',
-        Price:'$320',
+        productName:'Baby Pool',
+        Price:'$4800',
         productImage:product8
     },
     {
         id:9,
-        productName:'Baby Lotion, Baby Rash Cream, Baby Wipes And Baby Massage Mustard Oil  (White)',
-        Price:'$560',
+        productName:'Munchkin Swing',
+        Price:'$3560',
         productImage:product9
     },
     {
         id:10,
-        productName:'Cleansing baby wipes',
+        productName:'Clearance',
         Price:'$280',
         productImage:product10
     } ,
     {
         id:11,
-        productName:'Versatile baby blanket',
-        Price:'$245',
+        productName:'Baby Bunting Bodysuitt',
+        Price:'$545',
         productImage:product11
     },
     {
         id:12,
-        productName:'Towels',
-        Price:'$155',
+        productName:'Toddler Toys',
+        Price:'$2500',
         productImage:product12
     },
     {
         id:13,
-        productName:'Classy baby towels',
+        productName:'Baby Washcloth',
         Price:'$247',
         productImage:product13
     },
     {
         id:14,
-        productName:'Baby lotion',
+        productName:'Johnsons Baby Oil',
         Price:'$284',
         productImage:product14
     },
     {
         id:15,
-        productName:' Food Feeder Nipple',
-        Price:'$154',
+        productName:' Shoes',
+        Price:'$654',
         productImage:product15
     },
     {
         id:16,
-        productName:'Mosquito Net Set Sleeping Bag for 0-6 Month Babies',
-        Price:'$686',
+        productName:'Newborn&Infant Socks',
+        Price:'$386',
         productImage:product16
     },
     {
         id:17,
-        productName:'Fasionable baby blanket',
-        Price:'$269',
+        productName:'Chicco Bottle',
+        Price:'$469',
         productImage:product17
     },
     {
         id:18,
-        productName:'Baby lotion and cream',
-        Price:'$239',
+        productName:'Hooded Climbing',
+        Price:'$739',
         productImage:product18
     },
     {
         id:19,
-        productName:'Baby fruit nibbler, teether, bib & spoon feeder for feeding Teether and Feeder (Multicolour)',
-        Price:'$310',
+        productName:'Shoes',
+        Price:'$540',
         productImage:product19
     },
     {
         id:20,
-        productName:'Fruit Feeder',
-        Price:'$110',
+        productName:'Organic Bodysuit',
+        Price:'$589',
         productImage:product20
     },
     {
         id:21,
-        productName:'Unique baby diapers',
-        Price:'$420',
+        productName:'Conscious Baby Care',
+        Price:'$1420',
         productImage:product21
     },
     {
         id:22,
-        productName:'Spoon Bottle Feeder',
-        Price:'$150',
+        productName:'Baby Bath Tub',
+        Price:'$2150',
         productImage:product22
     },
     {
         id:23,
-        productName:'Baby lotion',
-        Price:'$204',
+        productName:'Seat Blanket',
+        Price:'$750',
         productImage:product23
     },
     {
         id:24,
-        productName:'Mosquito net',
-        Price:'$189',
+        productName:'Baby Bed',
+        Price:'$1189',
         productImage:product24
     },
     {
         id:25,
-        productName:'Body wash',
-        Price:'$531',
+        productName:'Baby Activity Walker',
+        Price:'$2531',
         productImage:product25
-    } 
+    } ,
+    {
+        id:26,
+        productName:'Sleeveless Corduroy',
+        Price:'$799',
+        productImage:product26
+    } ,
+    {
+        id:27,
+        productName:'Jumpsuit',
+        Price:'$831',
+        productImage:product27
+    } ,
+ {
+        id:28,
+        productName:'Baby Bamsedragt',
+        Price:'$560',
+        productImage:product28
+    } ,
+    {
+        id:29,
+        productName:'Baby Brezza',
+        Price:'$4531',
+        productImage:product29
+    } ,
+    {
+        id:30,
+        productName:'Toddler',
+        Price:'$431',
+        productImage:product30
+    },
+    {
+        id:31,
+        productName:'Newborn Essentials',
+        Price:'$540',
+        productImage:product31
+    } ,
+    {
+        id:32,
+        productName:'Smooth Clothy',
+        Price:'$650',
+        productImage:product32
+    } ,
+    {
+        id:33,
+        productName:'Moisturizer',
+        Price:'$600',
+        productImage:product33
+    }  ,
+    {
+        id:34,
+        productName:'Bunny Cloth',
+        Price:'$989',
+        productImage:product34
+    } ,
+    {
+        id:35,
+        productName:'Baby Wipes',
+        Price:'$530',
+        productImage:product35
+    } ,
+    {
+        id:36,
+        productName:'Princess Shoes',
+        Price:'$431',
+        productImage:product36
+    },
+    {
+        id:37,
+        productName:'Dove',
+        Price:'$149',
+        productImage:product37
+    },
+    {
+        id:38,
+        productName:'Easter Basket',
+        Price:'$1200',
+        productImage:product38
+    },
+    {
+        id:39,
+        productName:'Ribbed Short Sets',
+        Price:'$760',
+        productImage:product39
+    },
+    {
+        id:40,
+        productName:'Cotonetes',
+        Price:'$350',
+        productImage:product40
+    },
+    {
+        id:41,
+        productName:'Fleece-Lined Jogger Set',
+        Price:'$1100',
+        productImage:product41
+    },
+    {
+        id:42,
+        productName:'Pampers',
+        Price:'$670',
+        productImage:product42
+    },
+    {
+        id:43,
+        productName:'Handmade Baby Clothes',
+        Price:'$1500',
+        productImage:product43
+    },
+    {
+        id:44,
+        productName:'Long Knit Bow Socks',
+        Price:'$650',
+        productImage:product44
+    },
+    {
+        id:45,
+        productName:'Baby Walker',
+        Price:'$2300',
+        productImage:product45
+    }
+        
 ]
