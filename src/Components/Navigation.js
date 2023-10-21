@@ -12,7 +12,7 @@ import { Dropdown } from 'react-bootstrap';
 const Navigation = () => {
  const Nvgtn=useNavigate()
   return (
-    <Navbar style={{backgroundColor:'white',height:'85px'}} expand="lg">
+    <Navbar style={{backgroundColor:'lightgrey',height:'85px'}} expand="lg">
     <Container fluid>
       <Navbar.Brand onClick={()=>Nvgtn('/')}><img src={logo}/></Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -25,7 +25,7 @@ const Navigation = () => {
         </Dropdown.Toggle>
       <Dropdown.Menu>
         <Dropdown.Item onClick={()=>{Nvgtn('/cloths')}}><h6 style={{fontFamily:'serif',fontSize:'25px',fontWeight:'1px'}}>Cloths</h6></Dropdown.Item>
-        <Dropdown.Item onClick={()=>{Nvgtn('./Prdcts')}}><h6 style={{fontFamily:'serif',fontSize:'25px',fontWeight:'1px'}}>Products</h6></Dropdown.Item>
+        <Dropdown.Item onClick={()=>{Nvgtn('/Prdcts')}}><h6 style={{fontFamily:'serif',fontSize:'25px',fontWeight:'1px'}}>Products</h6></Dropdown.Item>
       </Dropdown.Menu>
       </Dropdown>
         </Nav>

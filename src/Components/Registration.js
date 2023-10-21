@@ -11,7 +11,7 @@ const Registration = () => {
   const handleChange=()=>{
     const refname=reffname.current.value
     const refPass=reffPass.current.value
-    const value={name:refname,pass:refPass,id:Date.now()}
+    const value={name:refname,pass:refPass}
     setUser ([...user,value])
     console.log(user);
     if(!refname || !refPass){
@@ -28,14 +28,14 @@ const Registration = () => {
      <Form className='p-4 m-4'>
       <h2 style={{textAlign:'center'}}>Registration</h2>
      <Form.Group className="mb-3" controlId="formGroupEmail">
-        <Form.Control type="text" placeholder="Enter username" style={{width:'500px'}}  ref={reffname}/>
+        <Form.Control type="text" placeholder="Enter UserName" style={{width:'500px'}}  ref={reffname}/>
       </Form.Group>
       <Form.Group className="mb-3" controlId="formGroupEmail">
-        <Form.Control type="email" placeholder="Enter email" style={{width:'500px'}}/>
+        <Form.Control type="email" placeholder="Enter Email" style={{width:'500px'}}/>
       </Form.Group>
       <Form.Group className="mb-3" controlId="formGroupPassword" style={{width:'500px'}}>
-        <Form.Control type="password" placeholder="Enter password"  ref={reffPass}/><br/>
-        <Button style={{position:'relative', left:'200px',backgroundColor:'black'}} onClick={handleChange} type="submit">Submit</Button>
+        <Form.Control type="password" placeholder="Enter Password"  ref={reffPass}/><br/>
+        <Button style={{position:'relative', left:'200px',backgroundColor:'black', border:'none'}} onClick={handleChange} type="submit">Submit</Button>
       </Form.Group>
     </Form>
     </div>

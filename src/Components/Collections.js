@@ -21,12 +21,12 @@ const Collections = () => {
       <Card.Body>
         <Card.Title style={{fontFamily:'serif',textAlign:'center'}}>{item.productName}</Card.Title>
         <Card.Title style={{fontFamily:'serif',textAlign:'center'}}>{item.Price}</Card.Title><br/><br/>
-        <Link><Button style={{backgroundColor:'black'}} variant="primary">Add to cart</Button></Link>
-        <Link><Button style={{backgroundColor:'black',marginLeft:'10px'}} variant="primary">Buy now</Button></Link>
+        <Link><Button style={{backgroundColor:'black',border:'none'}}>Add to cart</Button></Link>
+        <Link><Button style={{backgroundColor:'black',marginLeft:'10px',border:'none'}}>Buy now</Button></Link>
       </Card.Body>
     </Card><br/>
 
-        </div>
+  </div>
         ))}
         </div>
         </Container>

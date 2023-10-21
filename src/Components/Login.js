@@ -30,11 +30,11 @@ const Login = () => {
      <Form className='p-4 m-4'>
       <h2 style={{textAlign:'center'}}>Login</h2>
      <Form.Group className="mb-3" controlId="formGroupEmail">
-        <Form.Control type="text" placeholder="Enter username" style={{width:'500px'}}  ref={Lreffname}/>
+        <Form.Control type="text" placeholder="Enter UserName" style={{width:'500px'}}  ref={Lreffname}/>
       </Form.Group>
       <Form.Group className="mb-3" controlId="formGroupPassword" style={{width:'500px'}}>
-        <Form.Control type="password" placeholder="Enter password"  ref={LreffPass}/><br/>
-        <Button style={{position:'relative',left:'150px',backgroundColor:'black'}} onClick={handleClick} type="button">Login</Button>
+        <Form.Control type="password" placeholder="Enter Password"  ref={LreffPass}/><br/>
+        <Button style={{position:'relative',left:'150px',backgroundColor:'black',border:'none'}} onClick={handleClick} type="button">Login</Button>
         <Link style={{position:'relative',left:'170px', color:'black'}} to='/rgstn'>Register here</Link> 
       </Form.Group>
       </Form>
