@@ -9,6 +9,7 @@ import Collections from "./Components/Collections";
 import { PRODUCTS } from "./Components/Products";
 import Cloths from "./Components/Cloths";
 import Prdcts from "./Components/Prdcts";
+import ViewProduct from "./Components/ViewProduct";
 export const userContext = createContext()
 function App() {
   const [user,setUser]=useState([])
@@ -27,6 +28,7 @@ return (
       <Route path="/cart" element={<Cart/>}></Route>
       <Route path="/admin" element={<Admin />}></Route>
       <Route path="/clctns" element={<Collections/>}></Route>
+      <Route path="/view/:id" element={<ViewProduct/>}></Route>
     </Routes>
     </userContext.Provider>
     </div>

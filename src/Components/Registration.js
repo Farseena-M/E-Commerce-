@@ -22,13 +22,14 @@ const Registration = () => {
   }
   return (
     <>
+    <div className='d-flex align-items-center justify-content-center flex-wrap' style={{backgroundColor:'grey',position:'absolute',height:'820px',width:'100%'}}>
     <Container style={{alignItems:'center'}} className=' mt-4 p-4'>
       <div className='m-4 p-5 mt-4 d-flex align-items-center justify-content-center flex-wrap'>
-        <div className=' p-4 mt-5' style={{alignItems:'center',width:'650px',height:'400px',border:'2px solid'}}>
+        <div className=' p-4 mt-5' style={{alignItems:'center',width:'650px',height:'400px',border:'1px',borderRadius:'8px' ,backgroundColor:'lightgrey'}}>
      <Form className='p-4 m-4'>
-      <h2 style={{textAlign:'center'}}>Registration</h2>
+      <h2 style={{textAlign:'center'}}>Registration</h2><br/>
      <Form.Group className="mb-3" controlId="formGroupEmail">
-        <Form.Control type="text" placeholder="Enter UserName" style={{width:'500px'}}  ref={reffname}/>
+        <Form.Control type="text" placeholder="Enter Username" style={{width:'500px'}}  ref={reffname}/>
       </Form.Group>
       <Form.Group className="mb-3" controlId="formGroupEmail">
         <Form.Control type="email" placeholder="Enter Email" style={{width:'500px'}}/>
@@ -41,6 +42,7 @@ const Registration = () => {
     </div>
       </div>
     </Container>
+    </div>
     </>
   )
 }

@@ -2,13 +2,13 @@ import React, { useContext } from 'react'
 import { userContext } from '../App'
 import { Card, Container } from 'react-bootstrap'
 import {Button} from 'react-bootstrap'
-import { Link, useNavigate, useParams } from 'react-router-dom'
+import { useNavigate} from 'react-router-dom'
 import Navigation from './Navigation'
 const Collections = () => {
-  const{product,login,cart,setCart}=useContext(userContext)
-
+  const{product}=useContext(userContext)
+  const Nvgt=useNavigate()
   return (
-    <div>
+    <div style={{backgroundColor:'lightgrey'}}>
       <Navigation/>
       <Container>
       <h1 style={{textAlign:'center',fontFamily:'serif'}}><u>Collections</u></h1>
@@ -20,13 +20,11 @@ const Collections = () => {
       <Card.Img variant="top" src={item.productImage}style={{height:"200px",width:'250px'}}/>
       <Card.Body>
         <Card.Title style={{fontFamily:'serif',textAlign:'center'}}>{item.productName}</Card.Title>
-        <Card.Title style={{fontFamily:'serif',textAlign:'center'}}>{item.Price}</Card.Title><br/><br/>
-        <Link><Button style={{backgroundColor:'black',border:'none'}}>Add to cart</Button></Link>
-        <Link><Button style={{backgroundColor:'black',marginLeft:'10px',border:'none'}}>Buy now</Button></Link>
+        <Card.Title style={{fontFamily:'serif',textAlign:'center'}}>Price:{item.Price}</Card.Title><br/><br/>
+        <Button onClick={()=>Nvgt(`/view/${item.id}`)} style={{backgroundColor:'black',border:'none',alignItems:'center'}}>View Product</Button>
       </Card.Body>
     </Card><br/>
-
-  </div>
+    </div>
         ))}
         </div>
         </Container>

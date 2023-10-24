@@ -1,11 +1,12 @@
 import { PRODUCTS } from './Products'
 import Navigation from './Navigation'
 import { Button, Card, Container } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 const Prdcts = () => {
+  const Nvgt=useNavigate()
   const babyProduct = PRODUCTS.filter((prdct)=>prdct.baby==='product')
   return (
-       <div>
+    <div style={{backgroundColor:'lightgrey'}}>
       <Navigation/>
       <Container>
       <h1 style={{textAlign:'center',fontFamily:'serif'}}><u>Products</u></h1>
@@ -17,9 +18,8 @@ const Prdcts = () => {
       <Card.Img variant="top" src={item.productImage}style={{height:"200px",width:'250px'}}/>
       <Card.Body>
         <Card.Title style={{fontFamily:'serif',textAlign:'center'}}>{item.productName}</Card.Title>
-        <Card.Title style={{fontFamily:'serif',textAlign:'center'}}>{item.Price}</Card.Title><br/><br/>
-        <Link><Button style={{backgroundColor:'black'}} variant="primary">Add to cart</Button></Link>
-        <Link><Button style={{backgroundColor:'black',marginLeft:'10px'}} variant="primary">Buy now</Button></Link>
+        <Card.Title style={{fontFamily:'serif',textAlign:'center'}}>Price:{item.Price}</Card.Title><br/><br/>
+        <Button onClick={()=>Nvgt(`/view/${item.id}`)} style={{backgroundColor:'black',border:'none'}} variant="primary">View product</Button>
       </Card.Body>
     </Card><br/>
       </div>

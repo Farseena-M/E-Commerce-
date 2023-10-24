@@ -50,338 +50,385 @@ export const PRODUCTS=[
     {
         id:1,
         productName:'Playmat',
-        Price:'price:1500',
+        Price:'1500',
         productImage:product1,
-        baby:'product'
+        baby:'product',
+        qty:1
     },
     {
         id:2,
         productName:'Crawling Pads',
-        Price:'price:499',
+        Price:'499',
         productImage:product2,
-        baby:'cloth'
+        baby:'cloth',
+        qty:1
     },
     {
         id:3,
         productName:'Infant Swing',
-        Price:'price:1540',
+        Price:'1540',
         productImage:product3,
-        baby:'product'
+        baby:'product',
+        qty:1
     },
     {
         id:4,
         productName:'Animal Towel',
-        Price:'price:480',
+        Price:'480',
         productImage:product4,
-        baby:'cloth'
+        baby:'cloth',
+        qty:1
     },
     {
         id:5,
         productName:'Baby Doll Toys',
-        Price:'price:341',
+        Price:'341',
         productImage:product5,
-        baby:'product'
+        baby:'product',
+        qty:1
     },
     {
         id:6,
         productName:'Ginbear Plates ',
-        Price:'price:260 ',
+        Price:'260 ',
         productImage:product6,
-        baby:'product'
+        baby:'product',
+        qty:1
     },
     {
         id:7,
         productName:'Animal Hooded Towel',
-        Price:'price:350',
+        Price:'350',
         productImage:product7,
-        baby:'cloth'
+        baby:'cloth',
+        qty:1
     },
     {
         id:8,
         productName:'Baby Pool',
-        Price:'price:4800',
+        Price:'4800',
         productImage:product8,
-        baby:'product'
+        baby:'product',
+        qty:1
     },
     {
         id:9,
         productName:'Munchkin Swing',
-        Price:'price:3560',
+        Price:'3560',
         productImage:product9,
-        baby:'product'
+        baby:'product',
+        qty:1
     },
     {
         id:10,
         productName:'Clearance',
-        Price:'price:280',
+        Price:'280',
         productImage:product10,
-        baby:'cloth'
+        baby:'cloth',
+        qty:1
     } ,
     {
         id:11,
         productName:'Baby Bunting Bodysuitt',
-        Price:'price:545',
+        Price:'545',
         productImage:product11,
-        baby:'cloth'
+        baby:'cloth',
+        qty:1
     },
     {
         id:12,
         productName:'Toddler Toys',
-        Price:'price:2500',
+        Price:'2500',
         productImage:product12,
-        baby:'product'
+        baby:'product',
+        qty:1
     },
     {
         id:13,
         productName:'Baby Washcloth',
-        Price:'price:247',
+        Price:'247',
         productImage:product13,
-        baby:'cloth'
+        baby:'cloth',
+        qty:1
     },
     {
         id:14,
         productName:'Johnsons Baby Oil',
-        Price:'price:284',
+        Price:'284',
         productImage:product14,
-        baby:'product'
+        baby:'product',
+        qty:1
     },
     {
         id:15,
         productName:' Shoes',
-        Price:'price:654',
+        Price:'654',
         productImage:product15,
-        baby:'cloth'
+        baby:'cloth',
+        qty:1
     },
     {
         id:16,
         productName:'Newborn&Infant Socks',
-        Price:'price:386',
+        Price:'386',
         productImage:product16,
-        baby:'cloth'
+        baby:'cloth',
+        qty:1
     },
     {
         id:17,
         productName:'Chicco Bottle',
-        Price:'price:469',
+        Price:'469',
         productImage:product17,
-        baby:'product'
+        baby:'product',
+        qty:1
     },
     {
         id:18,
         productName:'Hooded Climbing',
-        Price:'price:739',
+        Price:'739',
         productImage:product18,
-        baby:'cloth'
+        baby:'cloth',
+        qty:1
     },
     {
         id:19,
         productName:'Shoes',
-        Price:'price:540',
+        Price:'540',
         productImage:product19,
-        baby:'cloth'
+        baby:'cloth',
+        qty:1
     },
     {
         id:20,
         productName:'Organic Bodysuit',
-        Price:'price:589',
+        Price:'589',
         productImage:product20,
-        baby:'cloth'
+        baby:'cloth',
+        qty:1
     },
     {
         id:21,
         productName:'Conscious Baby Care',
-        Price:'price:1420',
+        Price:'1420',
         productImage:product21,
-        baby:'product'
+        baby:'product',
+        qty:1
     },
     {
         id:22,
         productName:'Baby Bath Tub',
-        Price:'price:2150',
+        Price:'2150',
         productImage:product22,
-        baby:'product'
+        baby:'product',
+        qty:1
     },
     {
         id:23,
         productName:'Seat Blanket',
-        Price:'price:750',
+        Price:'750',
         productImage:product23,
-        baby:'product'
+        baby:'product',
+        qty:1
     },
     {
         id:24,
         productName:'Baby Bed',
-        Price:'price:1189',
+        Price:'1189',
         productImage:product24,
-        baby:'product'
+        baby:'product',
+        qty:1
     },
     {
         id:25,
         productName:'Baby Activity Walker',
-        Price:'price:2531',
+        Price:'2531',
         productImage:product25,
-        baby:'product'
+        baby:'product',
+        qty:1
     } ,
     {
         id:26,
         productName:'Sleeveless Corduroy',
-        Price:'price:799',
+        Price:'799',
         productImage:product26,
-        baby:'cloth'
+        baby:'cloth',
+        qty:1
     } ,
     {
         id:27,
         productName:'Jumpsuit',
-        Price:'price:831',
+        Price:'831',
         productImage:product27,
-        baby:'cloth'
+        baby:'cloth',
+        qty:1
     } ,
  {
         id:28,
         productName:'Baby Bamsedragt',
-        Price:'price:560',
+        Price:'560',
         productImage:product28,
-        baby:'cloth'
+        baby:'cloth',
+        qty:1
     } ,
     {
         id:29,
         productName:'Baby Brezza',
-        Price:'price:4531',
+        Price:'4531',
         productImage:product29,
-        baby:'product'
+        baby:'product',
+        qty:1
     } ,
     {
         id:30,
         productName:'Toddler',
-        Price:'price:431',
+        Price:'431',
         productImage:product30,
-        baby:'product'
+        baby:'product',
+        qty:1
     },
     {
         id:31,
         productName:'Newborn Essentials',
-        Price:'price:540',
+        Price:'540',
         productImage:product31,
-        baby:'cloth'
+        baby:'cloth',
+        qty:1
     } ,
     {
         id:32,
         productName:'Smooth Clothy',
-        Price:'price:650',
+        Price:'650',
         productImage:product32,
-        baby:'cloth'
+        baby:'cloth',
+        qty:1
     } ,
     {
         id:33,
         productName:'Moisturizer',
-        Price:'price:600',
+        Price:'600',
         productImage:product33,
-        baby:'product'
+        baby:'product',
+        qty:1
     }  ,
     {
         id:34,
         productName:'Bunny Cloth',
-        Price:'price:989',
+        Price:'989',
         productImage:product34,
-        baby:'cloth'
+        baby:'cloth',
+        qty:1
     } ,
     {
         id:35,
         productName:'Baby Wipes',
-        Price:'price:530',
+        Price:'530',
         productImage:product35,
-        baby:'product'
+        baby:'product',
+        qty:1
     } ,
     {
         id:36,
         productName:'Princess Shoes',
-        Price:'price:431',
+        Price:'431',
         productImage:product36,
-        baby:'cloth'
+        baby:'cloth',
+        qty:1
     },
     {
         id:37,
         productName:'Dove',
-        Price:'price:149',
+        Price:'149',
         productImage:product37,
-        baby:'product'
+        baby:'product',
+        qty:1
     },
     {
         id:38,
         productName:'Easter Basket',
-        Price:'price:1200',
+        Price:'1200',
         productImage:product38,
-        baby:'product'
+        baby:'product',
+        qty:1
     },
     {
         id:39,
         productName:'Ribbed Short Sets',
-        Price:'price:760',
+        Price:'760',
         productImage:product39,
-        baby:'cloth'
+        baby:'cloth',
+        qty:1
     },
     {
         id:40,
         productName:'Cotonetes',
-        Price:'price:350',
+        Price:'350',
         productImage:product40,
-        baby:'product'
+        baby:'product',
+        qty:1
     },
     {
         id:41,
         productName:'Fleece-Lined Jogger Set',
-        Price:'price:1100',
+        Price:'1100',
         productImage:product41,
-        baby:'cloth'
+        baby:'cloth',
+        qty:1
     },
     {
         id:42,
         productName:'Pampers',
-        Price:'price:670',
+        Price:'670',
         productImage:product42,
-        baby:'product'
+        baby:'product',
+        qty:1
     },
     {
         id:43,
         productName:'Handmade Baby Clothes',
-        Price:'price:1500',
+        Price:'1500',
         productImage:product43,
-        baby:'cloth'
+        baby:'cloth',
+        qty:1
     },
     {
         id:44,
         productName:'Long Knit Bow Socks',
-        Price:'price:650',
+        Price:'650',
         productImage:product44,
-        baby:'cloth'
+        baby:'cloth',
+        qty:1
     },
     {
         id:45,
         productName:'Baby Walker',
-        Price:'price:2300',
+        Price:'2300',
         productImage:product45,
-        baby:'product'
+        baby:'product',
+        qty:1
     },
     {
         id:46,
         productName:'Hoodie Jumpsuit',
-        Price:'price:999',
+        Price:'999',
         productImage:product46,
-        baby:'cloth'
+        baby:'cloth',
+        qty:1
     },
     {
         id:47,
         productName:'Bulk Baby Wipes',
-        Price:'price:860',
+        Price:'860',
         productImage:product47,
-        baby:'product'
+        baby:'product',
+        qty:1
     },
     {
         id:48,
         productName:'Bubble Romper',
-        Price:'price:889',
+        Price:'889',
         productImage:product48,
-        baby:'cloth'
+        baby:'cloth',
+        qty:1
     }
-        
 ]

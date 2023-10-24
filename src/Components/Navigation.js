@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Form } from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -12,9 +12,9 @@ import { Dropdown } from 'react-bootstrap';
 const Navigation = () => {
  const Nvgtn=useNavigate()
   return (
-    <Navbar style={{backgroundColor:'lightgrey',height:'85px'}} expand="lg">
+    <Navbar style={{backgroundColor:'white',height:'85px',width:'100%'}} expand="lg"sticky='top'>
     <Container fluid>
-      <Navbar.Brand onClick={()=>Nvgtn('/')}><img src={logo}/></Navbar.Brand>
+      <Navbar.Brand  style={{cursor:'pointer'}} onClick={()=>Nvgtn('/')}><img src={logo}/></Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
@@ -24,8 +24,8 @@ const Navigation = () => {
         Categories
         </Dropdown.Toggle>
       <Dropdown.Menu>
-        <Dropdown.Item onClick={()=>{Nvgtn('/cloths')}}><h6 style={{fontFamily:'serif',fontSize:'25px',fontWeight:'1px'}}>Cloths</h6></Dropdown.Item>
-        <Dropdown.Item onClick={()=>{Nvgtn('/Prdcts')}}><h6 style={{fontFamily:'serif',fontSize:'25px',fontWeight:'1px'}}>Products</h6></Dropdown.Item>
+        <Dropdown.Item onClick={()=>{Nvgtn('/cloths')}}><h6 style={{fontFamily:'serif',fontSize:'20px',fontWeight:'1px'}}>Cloths</h6></Dropdown.Item>
+        <Dropdown.Item onClick={()=>{Nvgtn('/Prdcts')}}><h6 style={{fontFamily:'serif',fontSize:'20px',fontWeight:'1px'}}>Products</h6></Dropdown.Item>
       </Dropdown.Menu>
       </Dropdown>
         </Nav>
