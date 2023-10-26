@@ -11,7 +11,6 @@ const Collections = () => {
     <div style={{backgroundColor:'lightgrey'}}>
       <Navigation/>
       <Container>
-      <h1 style={{textAlign:'center',fontFamily:'serif'}}><u>Collections</u></h1>
       <div className='m-4 p-5 mt-4 d-flex align-items-center justify-content-center flex-wrap'>
       {
        product.map((item)=>(

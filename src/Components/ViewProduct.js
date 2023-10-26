@@ -4,6 +4,7 @@ import { userContext } from '../App'
 import { useNavigate, useParams } from 'react-router-dom'
 import { Button, Card, Container } from 'react-bootstrap'
 import Navigation from './Navigation'
+import { toast } from 'react-toastify'
 
 const ViewProduct = () => {
     const Nvgt=useNavigate()
@@ -15,15 +16,15 @@ const ViewProduct = () => {
     const [filterArray]=filterPrdct
     const fltrCrt=cart.filter((item)=>item.id===filterArray.id)
     if(fltrCrt.length>0){
-       alert('Product already added to the cart')
+       toast.warning('Product already added to the cart')
     }
     else{
     setCart(prevState=>[...prevState,filterArray])
-    alert('added the product to cart')
+    toast.success('added the product to cart')
    }
   }
    else{
-    alert('Please login')
+    toast.error('Please login')
      Nvgt('/login')
    }
    }

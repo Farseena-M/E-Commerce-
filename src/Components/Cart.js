@@ -26,6 +26,9 @@ const Cart = () => {
      const totalAmount=(item)=>{
       return item.qty*item.Price
      }
+     const clearProduct=()=>{
+       setCart([]);
+     }
   return (
     <div style={{backgroundColor:'lightgrey'}}>
       <Navigation/>
@@ -43,7 +46,7 @@ const Cart = () => {
         <div><h6 style={{alignItems:'center',position:'relative',left:'70px'}}>qty:{item.qty}<br/>
           <Button onClick={()=>dcrmnt(item.id)} className='m-1' style={{backgroundColor:'black',border:'none',position:'relative',right:'15px'}}>-</Button>
           <Button onClick={()=>incrmnt(item.id)} className='m-1' style={{backgroundColor:'black',border:'none',position:'relative',right:'15px'}}>+</Button></h6>
-          <h6>Total:{totalAmount(item)}</h6>
+          <h6 style={{textAlign:'center'}}>Total:{totalAmount(item)}</h6>
         </div>
         <Button onClick={()=>remove(item.id)} style={{backgroundColor:'black',marginLeft:'10px',border:'none'}}>Remove</Button>
         <Button style={{backgroundColor:'black',marginLeft:'10px',border:'none'}}>Buy now</Button>
@@ -53,9 +56,11 @@ const Cart = () => {
         ))}    
       </div>
       <h2 style={{textAlign:'center'}}>Total Price:{totalPrice}</h2>
+      <button onClick={clearProduct}
+      style={{height:"40px",width:'85px',border:'none',backgroundColor:'black',color:'white',position:'relative',left:'600px',borderRadius:'8px'}}>
+      Clear</button>
     </Container>
     </div>
   )
 }
-
 export default Cart

@@ -9,7 +9,6 @@ const Cloths = () => {
     <div style={{backgroundColor:'lightgrey'}}>
       <Navigation/>
       <Container>
-      <h1 style={{textAlign:'center',fontFamily:'serif'}}><u>Cloths</u></h1>
       <div className='m-4 p-5 mt-4 d-flex align-items-center justify-content-center flex-wrap'>
       {
        babyCloth.map((item)=>(

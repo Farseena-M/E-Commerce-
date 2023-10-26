@@ -10,6 +10,8 @@ import { PRODUCTS } from "./Components/Products";
 import Cloths from "./Components/Cloths";
 import Prdcts from "./Components/Prdcts";
 import ViewProduct from "./Components/ViewProduct";
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from "react-toastify";
 export const userContext = createContext()
 function App() {
   const [user,setUser]=useState([])
@@ -31,6 +33,7 @@ return (
       <Route path="/view/:id" element={<ViewProduct/>}></Route>
     </Routes>
     </userContext.Provider>
+    <ToastContainer/>
     </div>
   );
 }
