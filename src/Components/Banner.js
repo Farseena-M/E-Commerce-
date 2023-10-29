@@ -5,7 +5,7 @@ const Banner = () => {
   return (
     <>
   <div class="carousel-inner">
-    <div class="carousel-item active" style={{height:'735px', width:'100%'}}>
+    <div class="carousel-item active" style={{height:'100%', width:'100%'}}>
         <img src={banner} class="d-block w-100" alt="..." />
     </div>
   </div>

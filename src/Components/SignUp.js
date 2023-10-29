@@ -26,7 +26,7 @@ const SignUp = () => {
   }
   return (
     <>
-    <div className='d-flex align-items-center justify-content-center flex-wrap' style={{backgroundColor:'grey',position:'absolute',height:'820px',width:'100%'}}>
+    <div className='d-flex align-items-center justify-content-center flex-wrap' style={{backgroundColor:'grey',position:'absolute',height:'100%',width:'100%'}}>
     <Container style={{alignItems:'center'}} className=' mt-4 p-4'>
       <div className='m-4 p-5 mt-4 d-flex align-items-center justify-content-center flex-wrap'>
         <div className=' p-4 mt-5' style={{alignItems:'center',width:'650px',height:'400px',border:'1px',borderRadius:'8px' ,backgroundColor:'lightgrey'}}>
