@@ -41,8 +41,9 @@ const ViewProduct = () => {
       <Card.Body>
         <Card.Title style={{fontFamily:'serif',textAlign:'center'}}>{item.productName}</Card.Title>
         <Card.Title style={{fontFamily:'serif',textAlign:'center'}}>{item.Price}</Card.Title>
-        <Button onClick={buttonClick} style={{backgroundColor:'black',border:'none'}}>Add to cart</Button>
-        <Button style={{backgroundColor:'black',marginLeft:'10px',border:'none'}}>Buy now</Button>
+       {cart.find((crtItm)=>crtItm.id===item.id)?
+        <Button onClick={buttonClick} style={{backgroundColor:'black',border:'none'}}>Go to cart</Button>:
+        <Button onClick={buttonClick} style={{backgroundColor:'black',border:'none'}}>Add to cart</Button>}
       </Card.Body>
     </Card><br/>
     </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -17,10 +18,10 @@ Contact Us</p>
 <div className='col-md-2 col-lg-2col-xl-2 mx-auto mt-3'>
 <h5 className='text-uppercase mb-4 font-weight-bold text-warning'>Products</h5>
 <p>
-  <a href='#' className='text-black' style={{textDecoration:'none'}}>Baby Cloths</a>
+ <Link style={{textDecoration:'none',color:'black'}} to='/cloths'>Baby Cloths</Link>
 </p>
 <p>
-  <a href='#' className='text-black' style={{textDecoration:'none'}}>Baby Products</a>
+ <Link style={{textDecoration:'none',color:'black'}} to='/prdcts'>Baby Products</Link>
 </p>
 </div>
 <div className='col-md-3 col-lg-2 col-xl-2 mx-auto mt-3'>
@@ -41,16 +42,13 @@ Contact Us</p>
 <div className='col-md-4 col-lg-3 col-xl-3 mx-auto mt-3'>
 <h5 className='text-uppercase mb-4 font-weight-bold text-warning'>Contact</h5>
 <p>
-  <i className='fas fa-home mr-3'></i>fghjkghjghjhjkjk
+  <i className='fas fa-home mr-3'></i>Phone : 9876543234
 </p>
 <p>
-  <i className='fas fa-envelope mr-3'></i>fghjkghjghjhjkjk
+  <i className='fas fa-envelope mr-3'></i>Email : Babyshh123@gmail.com
 </p>
 <p>
-  <i className='fas fa-phone mr-3'></i>fghjkghjghjhjkjk
-</p>
-<p>
-  <i className='fas fa-print mr-3'></i>fghjkghjghjhjkjk
+  <i className='fas fa-envelope mr-3'></i>Place : Kakkanchery
 </p>
 </div>
 </div>

@@ -47,9 +47,9 @@ const Cart = () => {
           <Button onClick={()=>dcrmnt(item.id)} className='m-1' style={{backgroundColor:'black',border:'none',position:'relative',right:'15px'}}>-</Button>
           <Button onClick={()=>incrmnt(item.id)} className='m-1' style={{backgroundColor:'black',border:'none',position:'relative',right:'15px'}}>+</Button></h6>
           <h6 style={{textAlign:'center'}}>Total:{totalAmount(item)}</h6>
-        </div>
-        <Button onClick={()=>remove(item.id)} style={{backgroundColor:'black',marginLeft:'10px',border:'none'}}>Remove</Button>
-        <Button style={{backgroundColor:'black',marginLeft:'10px',border:'none'}}>Buy now</Button>
+        </div>     
+          <Button style={{backgroundColor:'black',marginLeft:'10px',border:'none'}}>Buy now</Button>
+          <Button onClick={()=>remove(item.id)} style={{backgroundColor:'black',marginLeft:'10px',border:'none'}}>Remove</Button>
       </Card.Body>
     </Card><br/>
     </div>

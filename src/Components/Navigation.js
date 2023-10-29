@@ -12,6 +12,7 @@ import { Dropdown } from 'react-bootstrap';
 import {TbLogout} from 'react-icons/tb'
 import { userContext } from '../App';
 import { toast } from 'react-toastify';
+
 const Navigation = () => {
   const {login,setLogin,setCart} =useContext(userContext)
  const Nvgtn=useNavigate()
@@ -38,8 +39,8 @@ const Navigation = () => {
         Categories
         </Dropdown.Toggle>
       <Dropdown.Menu>
-        <Dropdown.Item onClick={()=>{Nvgtn('/cloths')}}><h6 style={{fontFamily:'serif',fontSize:'20px',fontWeight:'1px'}}>Cloths</h6></Dropdown.Item>
-        <Dropdown.Item onClick={()=>{Nvgtn('/Prdcts')}}><h6 style={{fontFamily:'serif',fontSize:'20px',fontWeight:'1px'}}>Products</h6></Dropdown.Item>
+        <Dropdown.Item onClick={()=>{Nvgtn('/cloths')}}><h6 style={{fontFamily:'serif',fontSize:'20px',fontWeight:'1px'}}>Baby Cloths</h6></Dropdown.Item>
+        <Dropdown.Item onClick={()=>{Nvgtn('/Prdcts')}}><h6 style={{fontFamily:'serif',fontSize:'20px',fontWeight:'1px'}}>Baby Products</h6></Dropdown.Item>
       </Dropdown.Menu>
       </Dropdown>
         </Nav>
@@ -52,17 +53,18 @@ const Navigation = () => {
               placeholder="Search"
               className="me-2"
               aria-label="Search"
-            />   
+            />  
           </Form>
-          <Nav.Link onClick={()=>{Nvgtn('/cart')}} style={{fontSize:'27px'}}><BsFillCartFill /></Nav.Link>  
+          <Nav.Link onClick={()=>{Nvgtn('/cart')}} data-tip='Cart' style={{fontSize:'27px'}}><BsFillCartFill /></Nav.Link>  
           {login?
           <Nav.Link onClick={logout} style={{fontSize:'27px'}}><TbLogout /></Nav.Link>:
           <Nav.Link onClick={()=>{Nvgtn('/login')}} style={{fontSize:'27px'}}><CgLogOut /></Nav.Link>}
-          <Nav.Link onClick={()=>{Nvgtn('/admin')}} style={{fontSize:'27px'}}><RiAdminFill /></Nav.Link>    
+          <Nav.Link  style={{fontSize:'27px'}}><RiAdminFill  onClick={()=>Nvgtn('/adminlogin')}/></Nav.Link>    
         </Nav>
-      </Navbar.Collapse>
-    </Container>
-  </Navbar>  )
+      </Navbar.Collapse> 
+  </Container>
+  </Navbar> 
+   )
 }
 
 export default Navigation

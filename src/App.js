@@ -1,9 +1,8 @@
 import { Route, Routes } from "react-router-dom";
-import Registration from './Components/Registration'
+import Registration from './Components/SignUp'
 import Login from "./Components/Login"
 import Home from "./Components/Home";
 import Cart from "./Components/Cart";
-import Admin from "./Components/Admin";
 import { createContext, useState } from "react";
 import Collections from "./Components/Collections";
 import { PRODUCTS } from "./Components/Products";
@@ -12,6 +11,8 @@ import Prdcts from "./Components/Prdcts";
 import ViewProduct from "./Components/ViewProduct";
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from "react-toastify";
+import AdminLogin from "./Components/AdminLogin";
+import AdminHome from "./Components/AdminHome";
 export const userContext = createContext()
 function App() {
   const [user,setUser]=useState([])
@@ -28,7 +29,8 @@ return (
       <Route path="/cloths" element={<Cloths/>}></Route>
       <Route path="/prdcts" element={<Prdcts/>}></Route>
       <Route path="/cart" element={<Cart/>}></Route>
-      <Route path="/admin" element={<Admin />}></Route>
+      <Route path="/adminlogin" element={<AdminLogin/>}></Route>
+      <Route path="/adminhome" element={<AdminHome/>}></Route>
       <Route path="/clctns" element={<Collections/>}></Route>
       <Route path="/view/:id" element={<ViewProduct/>}></Route>
     </Routes>

@@ -2,7 +2,7 @@ import React from 'react'
 import Navigation from './Navigation'
 import Banner from './Banner'
 import Footer from './Footer'
-import ViewProduct from './ViewProduct'
+import Collections from './Collections'
 
 const Home = () => {
   return (
