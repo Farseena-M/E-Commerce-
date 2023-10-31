@@ -9,16 +9,18 @@ const SignUp = () => {
   const {user,setUser}=useContext(userContext)
   const reffname=useRef()
   const reffPass=useRef()
+  const reffEmail=useRef()
   const handleChange=(e)=>{
     e.preventDefault()
     const refname=reffname.current.value
     const refPass=reffPass.current.value
-    if(!refname || !refPass){
+    const refEmail=reffEmail.current.value
+    if(!refname || !refPass || !refEmail){
       setError('Please fill in the fields')
     }
     else{
       nvgtt('/login')
-      const value={name:refname,pass:refPass}
+      const value={name:refname,pass:refPass,email:refEmail}
       setUser ([...user,value])
       console.log(user);
     }
@@ -36,7 +38,7 @@ const SignUp = () => {
         <Form.Control type="text" placeholder="Enter Username" style={{width:'500px'}}  ref={reffname}/>
       </Form.Group>
       <Form.Group className="mb-3" controlId="formGroupEmail">
-        <Form.Control type="email" placeholder="Enter Email" style={{width:'500px'}}/>
+        <Form.Control type="email" placeholder="Enter Email" style={{width:'500px'}} ref={reffEmail}/>
       </Form.Group>
       <Form.Group className="mb-3" controlId="formGroupPassword" style={{width:'500px'}}>
         <Form.Control type="password" placeholder="Enter Password"  ref={reffPass}/><br/>

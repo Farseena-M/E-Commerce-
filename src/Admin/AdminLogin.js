@@ -26,7 +26,7 @@ const AdminLogin = () => {
     <div className='m-4 p-5 mt-4 d-flex align-items-center justify-content-center flex-wrap'>
       <div className='shadow p-4 mt-5' style={{alignItems:'center',width:'650px', height:'350px',border:'1px',borderRadius:'8px' ,backgroundColor:'lightgrey'}}>
      <Form className='p-4 m-4'>
-      <h2 style={{textAlign:'center'}}>Login</h2><br/>
+      <h2 style={{textAlign:'center'}}>Admin Login</h2><br/>
      <Form.Group className="mb-3" controlId="formGroupEmail">
         <Form.Control type="text" placeholder="Enter Username" style={{width:'500px'}} ref={adminName} required />
       </Form.Group>

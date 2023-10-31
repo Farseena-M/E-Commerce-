@@ -42,13 +42,13 @@ Contact Us</p>
 <div className='col-md-4 col-lg-3 col-xl-3 mx-auto mt-3'>
 <h5 className='text-uppercase mb-4 font-weight-bold text-warning'>Contact</h5>
 <p>
-  <i className='fas fa-home mr-3'></i>Phone : 9876543234
+  <i className='fas fa-phone mr-3'></i>  9876543234
 </p>
 <p>
-  <i className='fas fa-envelope mr-3'></i>Email : Babyshh123@gmail.com
+  <i className='fas fa-envelope mr-3'></i>  Babyshh123@gmail.com
 </p>
 <p>
-  <i className='fas fa-envelope mr-3'></i>Place : Kakkanchery
+  <i></i>Place : Kakkanchery
 </p>
 </div>
 </div>
