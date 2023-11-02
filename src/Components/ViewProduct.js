@@ -42,7 +42,7 @@ const ViewProduct = () => {
         <Card.Title style={{fontFamily:'serif',textAlign:'center'}}>{item.productName}</Card.Title>
         <Card.Title style={{fontFamily:'serif',textAlign:'center'}}>{item.Price}</Card.Title>
        {cart.find((crtItm)=>crtItm.id===item.id)?
-        <Button onClick={buttonClick} style={{backgroundColor:'black',border:'none'}}>Go to cart</Button>:
+        <Button onClick={()=>Nvgt('/cart')} style={{backgroundColor:'black',border:'none'}}>Go to cart</Button>:
         <Button onClick={buttonClick} style={{backgroundColor:'black',border:'none'}}>Add to cart</Button>}
       </Card.Body>
     </Card><br/>

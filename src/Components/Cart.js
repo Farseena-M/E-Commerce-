@@ -4,7 +4,7 @@ import { userContext } from '../App'
 import { Button, Card, Container } from 'react-bootstrap'
 import Navigation from './Navigation'
 const Cart = () => {
-  const {cart,setCart} =useContext(userContext)
+  const {cart,setCart,buy,setBuy} =useContext(userContext)
   const incrmnt=(id)=>{
  const newqty=cart.map((item)=>
   item.id===id?{...item,qty:item.qty+1}:item)
@@ -29,6 +29,12 @@ const Cart = () => {
      const clearProduct=()=>{
        setCart([]);
      }
+     const buyNow=(id)=>{
+        const buyProduct=cart.find((item)=>item.id===id)
+        const remove=cart.filter((item)=>item.id!==id)
+        setBuy([...buy,buyProduct])
+        setCart(remove)
+     }
   return (
     <div style={{backgroundColor:'lightgrey'}}>
       <Navigation/>
@@ -48,7 +54,7 @@ const Cart = () => {
           <Button onClick={()=>incrmnt(item.id)} className='m-1' style={{backgroundColor:'black',border:'none',position:'relative',right:'15px'}}>+</Button></h6>
           <h6 style={{textAlign:'center'}}>Total:{totalAmount(item)}</h6>
         </div>     
-          <Button style={{backgroundColor:'black',marginLeft:'10px',border:'none'}}>Buy now</Button>
+          <Button onClick={()=>buyNow(item.id)} style={{backgroundColor:'black',marginLeft:'10px',border:'none'}}>Buy now</Button>
           <Button onClick={()=>remove(item.id)} style={{backgroundColor:'black',marginLeft:'10px',border:'none'}}>Remove</Button>
       </Card.Body>
     </Card><br/>

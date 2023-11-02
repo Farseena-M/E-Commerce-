@@ -18,9 +18,16 @@ const AdminLogin = () => {
     }else{
       toast.error('Please correct the username or password')
     }
+    if(!LadminName|| !LadminPass){
+      setError('Please fill in the fields')
+    }
+    else if(!LadminName){
+      setError('Please fill in the fields')
+    }else if(!LadminPass){
+      setError('Please fill in the fields')
+    }
    }
   return (
-  
       <div className='d-flex align-items-center justify-content-center flex-wrap' style={{backgroundColor:'grey',position:'absolute',height:'820px',width:'100%'}}>
     <Container style={{alignItems:'center'}} className=' mt-4 p-4'>
     <div className='m-4 p-5 mt-4 d-flex align-items-center justify-content-center flex-wrap'>

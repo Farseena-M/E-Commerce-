@@ -18,15 +18,18 @@ import AdminHome from "./Admin/AdminHome";
 import AdminPrdcts from "./Admin/AdminPrdcts";
 import Edit from "./Admin/Edit";
 import Add from "./Admin/Add";
+import BuyProduct from "./Admin/BuyProduct";
 export const userContext = createContext()
 function App() {
   const [user,setUser]=useState([])
   const [login,setLogin]=useState(false)
   const[product,setProduct]=useState(PRODUCTS)
   const [cart,setCart]=useState([])
+  const [search,setSearch]=useState('')
+  const [buy,setBuy]=useState([])
 return (
     <div>
-      <userContext.Provider value={{user,setUser,login,setLogin,product,cart,setCart,setProduct}}>
+      <userContext.Provider value={{user,setUser,login,setLogin,product,cart,setCart,setProduct,search,setSearch,buy,setBuy}}>
     <Routes>
       <Route path="/rgstn" element={<Registration/>}></Route>
       <Route path="/login" element={<Login/>}></Route>
@@ -41,6 +44,7 @@ return (
       <Route path="/edit/:id" element={<Edit/>}></Route>
       <Route path="/adminprdcts" element={<AdminPrdcts/>}></Route>
       <Route path="/add" element={<Add/>}></Route>
+      <Route path="/buy" element={<BuyProduct/>}></Route>
       <Route path="/clctns" element={<Collections/>}></Route>
       <Route path="/view/:id" element={<ViewProduct/>}></Route>
     </Routes>

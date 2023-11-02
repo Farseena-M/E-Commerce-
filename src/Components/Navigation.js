@@ -47,14 +47,6 @@ import Tooltip from 'react-bootstrap/Tooltip';
       </Navbar.Collapse>
       <Navbar.Collapse style={{justifyContent:'end'}}>
         <Nav style={{gap:'0.6rem',alignItems:'center'}}>
-        <Form className="d-flex">
-            <Form.Control 
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />  
-          </Form>
           <Nav.Link onClick={()=>{Nvgtn('/cart')}} style={{fontSize:'27px'}} title='Cart'><BsFillCartFill /></Nav.Link> 
           {login?
           <Nav.Link onClick={logout} style={{fontSize:'27px'}} title='Logout'><TbLogout /></Nav.Link>:

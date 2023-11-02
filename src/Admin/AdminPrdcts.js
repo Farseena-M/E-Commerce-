@@ -22,6 +22,7 @@ const AdminPrdcts = () => {
         <th>Name</th>
         <th>Price</th>
         <th>Image</th>
+        <th>Qty</th>
         <th>Action</th>
       </tr>
     </thead>
@@ -33,6 +34,7 @@ const AdminPrdcts = () => {
               <td>{item.productName}</td>
               <td>{item.Price}</td>
               <td><img style={{height:'3rem'}} src={item.productImage} /></td>
+              <td>{item.qty}</td>
               <td ><Button style={{backgroundColor:'black',border:'none'}} className='m-2' onClick={()=>Nvgt(`/edit/${item.id}`)}>Edit</Button>
               <Button  style={{backgroundColor:'black',border:'none'}} onClick={()=>removeItem(item.id)}>Delete</Button></td>
             </tr>

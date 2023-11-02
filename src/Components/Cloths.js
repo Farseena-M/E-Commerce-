@@ -2,6 +2,7 @@ import { PRODUCTS } from './Products'
 import Navigation from './Navigation'
 import { Button, Card, Container } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
+import Footer from './Footer'
 const Cloths = () => {
   const Nvgt=useNavigate()
   const babyCloth=PRODUCTS.filter((clth)=>clth.baby==='cloth')
@@ -26,6 +27,7 @@ const Cloths = () => {
         ))}
         </div>
         </Container>
+        <Footer/>
     </div>
   )
 }

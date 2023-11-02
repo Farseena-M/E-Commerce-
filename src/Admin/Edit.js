@@ -32,19 +32,20 @@ const Edit = () => {
     <div style={{display:'flex'}}>
       <Sidebar />
       <div style={{flex:'1',textAlign:'center'}}>
-        <h1>Edit Product</h1><br /><hr />
+        <h1 style={{fontFamily:'sans-serif',padding:'10px',position:'relative',top:'30px',color:'#333'}}>Edit Product</h1><br /><hr />
        <Form>
-        <label >Edit Product Name :</label>
-        <input type='text' name='productName' defaultValue={editProduct.productName} onChange={(e)=>setName(e.target.value)}/><br /><br />
-        <label >Edit Product Price :</label>
-        <input  type='text' name='Price' defaultValue={editProduct.Price} onChange={(e)=>setPrice(e.target.value)}/><br /><br />
+        <label style={{fontSize:'20px',fontFamily:'italic'}}> Product Name </label><br />
+        <input className='shadow' style={{height:'45px',width:'500px',border:'none',borderRadius:'8px',border:'1px solid',textAlign:'center'}} type='text' name='productName' defaultValue={editProduct.productName} onChange={(e)=>setName(e.target.value)}/><br /><br />
+        <label style={{fontSize:'20px',fontFamily:'italic'}} > Product Price </label><br />
+        <input className='shadow' style={{height:'45px',width:'500px',border:'none',borderRadius:'8px',border:'1px solid',textAlign:'center'}}  type='text' name='Price' defaultValue={editProduct.Price} onChange={(e)=>setPrice(e.target.value)}/><br /><br />
         
-        <label >Edit Product Image :</label>
-        <input  type='text' name='productImage' defaultValue={editProduct.productImage} onChange={(e)=>setImage(e.target.value)}/><br /><br />
+        <label style={{fontSize:'20px',fontFamily:'italic'}} > Product Image </label><br />
+        <input className='shadow' style={{height:'45px',width:'500px',border:'none',borderRadius:'8px',border:'1px solid',textAlign:'center'}}  type='text' name='productImage' defaultValue={editProduct.productImage} onChange={(e)=>setImage(e.target.value)}/><br /><br />
         
-        <label >Edit Product Baby :</label>
-        <input  type='text' name='baby' defaultValue={editProduct.baby} onChange={(e)=>setbaby(e.target.value)}/><br /><br />
-        <Button onClick={handleSave} style={{backgroundColor:'black',border:'none'}} >Save</Button>
+        <label style={{fontSize:'20px',fontFamily:'italic'}} > Product Type </label><br />
+        <select className='shadow' style={{height:'40px',width:'300px',border:'none',borderRadius:'8px',border:'1px solid',textAlign:'center',fontSize:'20px'}} ><option>Cloth</option>
+        <option>Product</option></select><br /><br />
+        <Button  onClick={handleSave} style={{backgroundColor:'black',border:'none',height:'40px',width:'100px'}} >Save</Button>
        </Form>
       </div>
     </div>
