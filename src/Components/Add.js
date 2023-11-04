@@ -45,18 +45,18 @@ const Add = () => {
         <h1 style={{fontFamily:'sans-serif',padding:'10px',position:'relative',top:'30px',color:'#333'}}>Add Product</h1><br /><hr />
           <Form>
             <label  style={{fontSize:'20px',fontFamily:'italic'}} >Product Name</label><br />
-            <input className='shadow' style={{height:'45px',width:'500px',border:'none',borderRadius:'8px',border:'1px solid',textAlign:'center'}} type='text' name='productName' value={newProduct.productName} onChange={Change} required/> <br /><br />   
+            <input className='shadow' style={{height:'45px',width:'500px',border:'1px solid grey',borderRadius:'8px',textAlign:'center'}} type='text' name='productName' value={newProduct.productName} onChange={Change} required/> <br /><br />   
             <label  style={{fontSize:'20px',fontFamily:'italic'}} >Product Price</label><br />
-            <input className='shadow' style={{height:'45px',width:'500px',border:'none',borderRadius:'8px',border:'1px solid',textAlign:'center'}} type='number' name='Price' value={newProduct.Price}  onChange={Change} required/><br /><br />
+            <input className='shadow' style={{height:'45px',width:'500px',border:'1px solid grey',borderRadius:'8px',textAlign:'center'}} type='number' name='Price' value={newProduct.Price}  onChange={Change} required/><br /><br />
             <label style={{fontSize:'20px',fontFamily:'italic'}} >Product Image</label><br />
-            <input className='shadow' style={{height:'45px',width:'500px',border:'none',borderRadius:'8px',border:'1px solid',textAlign:'center'}} type='text' name='productImage' value={newProduct.productImage}  onChange={Change}  required/><br /><br />
+            <input className='shadow' style={{height:'45px',width:'500px',border:'1px solid grey',borderRadius:'8px',textAlign:'center'}} type='text' name='productImage' value={newProduct.productImage}  onChange={Change}  required/><br /><br />
             <label  style={{fontSize:'20px',fontFamily:'italic'}} >Qty</label><br />
-            <input className='shadow' style={{height:'45px',width:'500px',border:'none',borderRadius:'8px',border:'1px solid',textAlign:'center'}} type='number' name='qty' value={newProduct.qty}  onChange={Change} required/><br /><br />
+            <input className='shadow' style={{height:'45px',width:'500px',border:'1px solid grey',borderRadius:'8px',textAlign:'center'}} type='number' name='qty' value={newProduct.qty}  onChange={Change} required/><br /><br />
             <label  style={{fontSize:'20px',fontFamily:'italic'}} >Product type</label><br />
-            <select className='shadow' style={{height:'40px',width:'300px',border:'none',borderRadius:'8px',border:'1px solid',textAlign:'center',fontSize:'20px'}} >
+            <select className='shadow' style={{height:'40px',width:'300px',border:'1px solid grey',borderRadius:'8px',textAlign:'center',fontSize:'20px'}}  name='baby' value={newProduct.baby}  onChange={Change} required>
             <option>Cloth</option>
             <option>Product</option></select><br /><br />
-            <Button style={{backgroundColor:'black',border:'none',height:'40px',width:'100px'}} onClick={Submit}>Save</Button>
+            <Button style={{backgroundColor:'black',border:'none',height:'40px',width:'100px'}} onClick={Submit}>Add</Button>
             </Form>
         </div>
     </div>

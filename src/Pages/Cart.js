@@ -2,7 +2,7 @@ import React from 'react'
 import { useContext } from 'react'
 import { userContext } from '../App'
 import { Button, Card, Container } from 'react-bootstrap'
-import Navigation from './Navigation'
+import Navigation from '../Components/Navigation'
 const Cart = () => {
   const {cart,setCart,buy,setBuy} =useContext(userContext)
   const incrmnt=(id)=>{

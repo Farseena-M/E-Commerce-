@@ -1,24 +1,24 @@
 import { Route, Routes } from "react-router-dom";
-import Registration from './Components/SignUp'
-import Login from "./Components/Login"
-import Home from "./Components/Home";
-import Cart from "./Components/Cart";
+import Login from "./Pages/Login"
+import Home from "./Pages/Home";
+import Cart from "./Pages/Cart";
 import { createContext, useState } from "react";
-import Collections from "./Components/Collections";
+import Collections from "./Pages/Collections";
 import { PRODUCTS } from "./Components/Products";
-import Cloths from "./Components/Cloths";
-import Prdcts from "./Components/Prdcts";
-import ViewProduct from "./Components/ViewProduct";
+import Cloths from "./Pages/Cloths";
+import Prdcts from "./Pages/Prdcts";
+import ViewProduct from "./Pages/ViewProduct";
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from "react-toastify";
-import AdminLogin from "./Admin/AdminLogin";
-import Sidebar from "./Admin/SideBar";
-import AdminUsers from "./Admin/AdminUsers";
-import AdminHome from "./Admin/AdminHome";
-import AdminPrdcts from "./Admin/AdminPrdcts";
-import Edit from "./Admin/Edit";
-import Add from "./Admin/Add";
-import BuyProduct from "./Admin/BuyProduct";
+import AdminLogin from "./Pages/AdminLogin";
+import Sidebar from "./Components/SideBar";
+import AdminUsers from "./Pages/AdminUsers";
+import AdminHome from "./Pages/AdminHome";
+import AdminPrdcts from "./Pages/AdminPrdcts";
+import Edit from "./Components/Edit";
+import Add from "./Components/Add";
+import BuyProduct from "./Components/BuyProduct";
+import SignUp from "./Pages/SignUp";
 export const userContext = createContext()
 function App() {
   const [user,setUser]=useState([])
@@ -31,7 +31,7 @@ return (
     <div>
       <userContext.Provider value={{user,setUser,login,setLogin,product,cart,setCart,setProduct,search,setSearch,buy,setBuy}}>
     <Routes>
-      <Route path="/rgstn" element={<Registration/>}></Route>
+      <Route path="/signup" element={<SignUp/>}></Route>
       <Route path="/login" element={<Login/>}></Route>
       <Route path="/" element={<Home />}></Route>
       <Route path="/cloths" element={<Cloths/>}></Route>

@@ -3,8 +3,8 @@ import { userContext } from '../App'
 import { Card, Container, Form } from 'react-bootstrap'
 import {Button} from 'react-bootstrap'
 import { useNavigate} from 'react-router-dom'
-import Navigation from './Navigation'
-import Footer from './Footer'
+import Navigation from '../Components/Navigation'
+import Footer from '../Components/Footer'
 const Collections = () => {
   const{product,search,setSearch}=useContext(userContext)
   const Nvgt=useNavigate()
@@ -20,17 +20,24 @@ const Collections = () => {
   return (
     <div style={{backgroundColor:'lightgrey'}}>
       <Navigation/>
-      <div >
-      <Form className="d-flex ">
-            <Form.Control 
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-              onChange={(ev)=>{setSearch(ev.target.value)}}
-           style={{height:'45px',width:'450px',position:'relative',left:'600px',top:'30px'}} />  
-          </Form></div>
-      <Container>
+      <div
+        className="templateContainer "
+        style={{ display: "flex", justifyContent: "center", margin: "10px" }}
+      >
+        <div className="searchInput_Container">
+          <input
+            style={{ width: "350px" ,height:'35px',border:'none',borderRadius:'5px',position:'relative',top:'30px'}}
+            id="searchInput"
+            type="text"
+            placeholder="Search here..."
+            onChange={(event) => {
+              setSearch(event.target.value);
+            }}
+          />
+        </div>
+      </div>
+
+    <Container>
       <div className='m-4 p-5 mt-4 d-flex align-items-center justify-content-center flex-wrap'>
       {
        Searches.map((item)=>(

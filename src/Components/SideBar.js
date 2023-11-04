@@ -8,11 +8,9 @@ import {
   CDBSidebarMenuItem,
 } from 'cdbreact';
 import { NavLink, useNavigate } from 'react-router-dom';
-import {HiViewGridAdd} from 'react-icons/hi'
 const Sidebar = () => {
-  const Nvgt=useNavigate()
   return (
-    <div style={{ display: 'flex', height: '371vh', overflow: 'scroll initial' }}>
+    <div style={{ display: 'flex', height: '371vh', overflow: 'scroll initial',position:'fixed'}}>
       <CDBSidebar textColor="#fff" backgroundColor="#333">
         <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
           <a href="/adminlogin"  className="text-decoration-none" style={{ color: 'inherit' }}>

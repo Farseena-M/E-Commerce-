@@ -1,8 +1,7 @@
 import React from 'react'
-import Navigation from './Navigation'
-import Banner from './Banner'
-import Footer from './Footer'
-import Collections from './Collections'
+import Navigation from '../Components/Navigation'
+import Banner from '../Components/Banner'
+import Footer from '../Components/Footer'
 
 const Home = () => {
   return (
@@ -15,5 +14,4 @@ const Home = () => {
     </>
   )
 }
-
 export default Home

@@ -3,7 +3,7 @@ import { useContext } from 'react'
 import { userContext } from '../App'
 import { useNavigate, useParams } from 'react-router-dom'
 import { Button, Card, Container } from 'react-bootstrap'
-import Navigation from './Navigation'
+import Navigation from '../Components/Navigation'
 import { toast } from 'react-toastify'
 
 const ViewProduct = () => {
@@ -29,7 +29,7 @@ const ViewProduct = () => {
    }
    }
   return (
-    <div style={{backgroundColor:'lightgrey',position:'absolute',height:'820px',width:'100%'}}>
+    <div style={{backgroundColor:'lightgrey',position:'absolute',height:'100%',width:'100%'}}>
             <Navigation/>
     <Container style={{alignItems:'center'}}className=' mt-4 p-4'>
     <div className='m-4 p-5 mt-4 d-flex align-items-center justify-content-center flex-wrap'>
