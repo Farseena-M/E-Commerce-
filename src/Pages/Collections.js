@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { userContext } from '../App'
-import { Card, Container, Form } from 'react-bootstrap'
+import { Card, Container} from 'react-bootstrap'
 import {Button} from 'react-bootstrap'
 import { useNavigate} from 'react-router-dom'
 import Navigation from '../Components/Navigation'
@@ -10,10 +10,12 @@ const Collections = () => {
   const Nvgt=useNavigate()
   
   const Searches=product.filter((val)=>{
-    if(search==''){
+    if(search===''){
       return val;
     }else if(val.productName.toLowerCase().includes(search.toLowerCase())){
       return val;
+    }else{
+      return '';
     }
   })
  

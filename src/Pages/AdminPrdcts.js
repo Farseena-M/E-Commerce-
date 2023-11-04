@@ -34,7 +34,7 @@ const AdminPrdcts = () => {
               <td>{item.id}</td>
               <td>{item.productName}</td>
               <td>{item.Price}</td>
-              <td><img style={{height:'3rem'}} src={item.productImage} /></td>
+              <td><img style={{height:'3rem'}} src={item.productImage} alt=''/></td>
               <td>{item.qty}</td>
               <td>{item.baby}</td>
               <td ><Button style={{backgroundColor:'black',border:'none'}} className='m-2' onClick={()=>Nvgt(`/edit/${item.id}`)}>Edit</Button>

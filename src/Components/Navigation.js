@@ -12,7 +12,7 @@ import {TbLogout} from 'react-icons/tb'
 import { userContext } from '../App';
 import { toast } from 'react-toastify';
   const Navigation = () => {
-  const {login,setLogin,setCart,user} =useContext(userContext)
+  const {login,setLogin,setCart} =useContext(userContext)
  const Nvgtn=useNavigate()
  const logout=()=>{
   if(login){
@@ -62,5 +62,4 @@ import { toast } from 'react-toastify';
   </Navbar> 
    )
 }
-
 export default Navigation

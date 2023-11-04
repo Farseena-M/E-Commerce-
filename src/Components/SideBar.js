@@ -7,7 +7,7 @@ import {
   CDBSidebarMenu,
   CDBSidebarMenuItem,
 } from 'cdbreact';
-import { NavLink, useNavigate } from 'react-router-dom';
+import { NavLink} from 'react-router-dom';
 const Sidebar = () => {
   return (
     <div style={{ display: 'flex', height: '371vh', overflow: 'scroll initial',position:'fixed'}}>
