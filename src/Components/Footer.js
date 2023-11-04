@@ -27,16 +27,16 @@ Contact Us</p>
 <div className='col-md-3 col-lg-2 col-xl-2 mx-auto mt-3'>
 <h5 className='text-uppercase mb-4 font-weight-bold text-warning'>Services</h5>
 <p>
-  <a  className='text-black' style={{textDecoration:'none'}}>Privacy Policy</a>
+  <span className='text-black' style={{textDecoration:'none'}}>Privacy Policy</span> 
 </p>
 <p>
-  <a  className='text-black' style={{textDecoration:'none'}}>Return&Refund Policy</a>
+  <span  className='text-black' style={{textDecoration:'none'}}>Return&Refund Policy</span>
 </p>
 <p>
-  <a  className='text-black' style={{textDecoration:'none'}}>Free Shipping</a>
+  <span  className='text-black' style={{textDecoration:'none'}}>Free Shipping</span>
 </p>
 <p>
-  <a  className='text-black' style={{textDecoration:'none'}}>Security</a>
+  <span  className='text-black' style={{textDecoration:'none'}}>Security</span>
 </p>
 </div>
 <div className='col-md-4 col-lg-3 col-xl-3 mx-auto mt-3'>

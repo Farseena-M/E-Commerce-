@@ -3,7 +3,6 @@ import Sidebar from './SideBar'
 import { useNavigate, useParams } from 'react-router-dom'
 import { userContext } from '../App'
 import { Button, Form } from 'react-bootstrap'
-import { toast } from 'react-toastify'
 
 const Edit = () => {
     const nvgt=useNavigate()
