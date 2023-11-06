@@ -3,9 +3,8 @@ import Form from 'react-bootstrap/Form';
 import {  useNavigate } from 'react-router-dom'
 import { userContext } from '../App'
 import { Button, Container } from 'react-bootstrap'
-import { toast } from 'react-toastify';
 const SignUp = () => {
-  const [error]=useState('')
+  const [error,setError]=useState('')
   const nvgtt=useNavigate()
   const {user,setUser}=useContext(userContext)
   const reffname=useRef()
@@ -16,16 +15,17 @@ const SignUp = () => {
     const refname=reffname.current.value
     const refPass=reffPass.current.value
     const refEmail=reffEmail.current.value
-    if (user.some((usr) => usr.name === refname)) {
-      toast.warning("Username is already taken");
-    } else {
-      const value = { name:refname, pass:refPass, email:refEmail };
-      setUser([...user, value]);
-      if (!refname || !refPass || !refEmail) {
-        toast.warning("Fill the form");
-      } else {
-        nvgtt("/login");
-      }
+    const value={name:refname,pass:refPass,email:refEmail}
+      setUser ([...user,value])
+      console.log(user);
+    if(!refname || !refPass || !refEmail){
+      setError('Please fill in the fields')
+    } 
+    else if(user.find((usr)=>usr.name===refname)){
+      setError('Username is already exists!')
+    }
+    else{
+      nvgtt('/login')
     }
   }
   return (
