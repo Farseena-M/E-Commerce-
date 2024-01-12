@@ -27,9 +27,10 @@ function App() {
   const [cart,setCart]=useState([])
   const [search,setSearch]=useState('')
   const [buy,setBuy]=useState([])
+
 return (
     <div>
-      <userContext.Provider value={{user,setUser,login,setLogin,product,cart,setCart,setProduct,search,setSearch,buy,setBuy}}>
+    <userContext.Provider value={{user,setUser,login,setLogin,product,cart,setCart,setProduct,search,setSearch,buy,setBuy}}>
     <Routes>
       <Route path="/signup" element={<SignUp/>}></Route>
       <Route path="/login" element={<Login/>}></Route>

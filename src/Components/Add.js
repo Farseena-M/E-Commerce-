@@ -52,8 +52,8 @@ const Add = () => {
             <input className='shadow' style={{height:'45px',width:'500px',border:'1px solid grey',borderRadius:'8px',textAlign:'center'}} type='text' name='productImage' value={newProduct.productImage}  onChange={Change}  required/><br /><br />
             <label  style={{fontSize:'20px',fontFamily:'italic'}} >Qty</label><br />
             <input className='shadow' style={{height:'45px',width:'500px',border:'1px solid grey',borderRadius:'8px',textAlign:'center'}} type='number' name='qty' value={newProduct.qty}  onChange={Change} required/><br /><br />
-            <label  style={{fontSize:'20px',fontFamily:'italic'}} >Product type</label><br />
             <select className='shadow' style={{height:'40px',width:'300px',border:'1px solid grey',borderRadius:'8px',textAlign:'center',fontSize:'20px'}}  name='baby' value={newProduct.baby}  onChange={Change} required>
+            <option>Product Type</option>
             <option>Cloth</option>
             <option>Product</option></select><br /><br />
             <Button style={{backgroundColor:'black',border:'none',height:'40px',width:'100px'}} onClick={Submit}>Add</Button>

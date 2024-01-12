@@ -1,4 +1,4 @@
-import React from 'react'
+ import React from 'react'
 import { useContext } from 'react'
 import { userContext } from '../App'
 import { Button, Card, Container } from 'react-bootstrap'
@@ -69,4 +69,4 @@ const Cart = () => {
     </div>
   )
 }
-export default Cart
+export default Cart 

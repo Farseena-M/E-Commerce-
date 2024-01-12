@@ -3,33 +3,34 @@ import {  useNavigate } from 'react-router-dom'
 import { userContext } from '../App'
 import { Form } from 'react-bootstrap'
 import { Button ,Container} from 'react-bootstrap'
+import axios from 'axios'
 import { toast } from 'react-toastify'
 const Login = () => {
   const [error,setError] =useState('')
   const {user,setLogin} = useContext(userContext)
   const Nvgt=useNavigate()
-  const Lreffname=useRef()
-  const LreffPass=useRef()
-  const handleClick=()=>{
-    const newLreffName=Lreffname.current.value
+   const Lreffname=useRef()
+   const LreffPass=useRef() 
+   const handleClick = async (e)=>{
+    e.preventDefault()
+   const newLreffName=Lreffname.current.value
     const newLreffPass=LreffPass.current.value
-    if(!newLreffName|| !newLreffPass){
-      setError('Please fill in the fields')
+    try{
+      const data = {
+        "username" :newLreffName,
+        "password" :newLreffPass
+       }
+       await axios.post('http://localhost:9000/api/users/login',data).then((res)=>{
+         const token = res.data.token
+       localStorage.setItem('token',token) 
+       toast.success("User login Successfully")
+       Nvgt('/')
+      }).catch((err)=>{
+        toast.error(err)
+      })
+    }catch(err){
+      console.error(err);
     }
-    else if(!newLreffName){
-      setError('Please fill in the fields')
-    }else if(!newLreffPass){
-      setError('Please fill in the fields')
-    }
-  const findName=user.find((usr)=>usr.name===newLreffName)
-  const findPass=user.find((usr)=>usr.pass===newLreffPass)
-  if(findName && findPass){
-    setLogin(true);
-      toast.success('Login Success');
-      Nvgt('/');
-  }else{
-    toast.error('Please correct the username or password!');
-  }
   }
   return (
   <>

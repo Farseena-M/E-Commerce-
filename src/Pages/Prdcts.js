@@ -21,7 +21,8 @@ const Prdcts = () => {
         <Card.Title style={{fontFamily:'serif',textAlign:'center'}}>Price:{item.Price}</Card.Title><br/><br/>
         <Button onClick={()=>Nvgt(`/view/${item.id}`)} style={{backgroundColor:'black',border:'none'}} variant="primary">View product</Button>
       </Card.Body>
-    </Card><br/>
+      </Card>
+      <br/>
       </div>
         ))}
         </div>

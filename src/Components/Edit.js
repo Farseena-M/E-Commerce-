@@ -42,8 +42,8 @@ const Edit = () => {
         <label style={{fontSize:'20px',fontFamily:'italic'}} > Product Image </label><br />
         <input className='shadow' style={{height:'45px',width:'500px',border:'1px solid grey',borderRadius:'8px',textAlign:'center'}}  type='text' name='productImage' defaultValue={editProduct.productImage} onChange={(e)=>setImage(e.target.value)}/><br /><br />
         
-        <label style={{fontSize:'20px',fontFamily:'italic'}} > Product Type </label><br />
         <select className='shadow' style={{height:'40px',width:'300px',border:'1px solid grey',borderRadius:'8px',textAlign:'center',fontSize:'20px'}} name='baby' defaultValue={editProduct.baby} onChange={(e)=>setbaby(e.target.value)}>
+        <option>Product Type</option>
         <option>Cloth</option>
         <option>Product</option></select><br /><br />
         <Button  onClick={handleSave} style={{backgroundColor:'black',border:'1px solid grey',height:'40px',width:'100px'}} >Save</Button>
