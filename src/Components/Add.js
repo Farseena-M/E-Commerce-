@@ -45,6 +45,8 @@ const Add = () => {
         <h1 style={{fontFamily:'sans-serif',padding:'10px',position:'relative',top:'30px',color:'#333'}}>Add Product</h1><br /><hr />
           <Form>
             <label  style={{fontSize:'20px',fontFamily:'italic'}} >Product Name</label><br />
+            <input className='shadow' style={{height:'45px',width:'500px',border:'1px solid grey',borderRadius:'8px',textAlign:'center'}} type='text' name='productName' value={newProduct.productName} onChange={Change} required/> <br /><br />
+            <label  style={{fontSize:'20px',fontFamily:'italic'}} >Product Description</label><br />
             <input className='shadow' style={{height:'45px',width:'500px',border:'1px solid grey',borderRadius:'8px',textAlign:'center'}} type='text' name='productName' value={newProduct.productName} onChange={Change} required/> <br /><br />   
             <label  style={{fontSize:'20px',fontFamily:'italic'}} >Product Price</label><br />
             <input className='shadow' style={{height:'45px',width:'500px',border:'1px solid grey',borderRadius:'8px',textAlign:'center'}} type='number' name='Price' value={newProduct.Price}  onChange={Change} required/><br /><br />

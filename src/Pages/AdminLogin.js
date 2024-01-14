@@ -2,29 +2,33 @@ import React, { useRef, useState } from 'react'
 import { Button, Container, Form } from 'react-bootstrap'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
-
+import axios  from 'axios'
 
 const AdminLogin = () => {
   const Nvgt=useNavigate()
-  const [error,setError]=useState('')
+  const [error]=useState('')
   const adminName=useRef()
   const adminPass=useRef()
-  const hndlChng=()=>{
+  const hndlChng = async(e) => {
+    e.preventDefault()
     const LadminName=adminName.current.value;
     const LadminPass=adminPass.current.value;
-     if(LadminName==="admin" && LadminPass==='123'){
-     toast.success('Login success')
-    Nvgt('/adminhome')
-    }else{
-      toast.error('Please correct the username or password')
-    }
-    if(!LadminName|| !LadminPass){
-      setError('Please fill in the fields')
-    }
-    else if(!LadminName){
-      setError('Please fill in the fields')
-    }else if(!LadminPass){
-      setError('Please fill in the fields')
+    try {
+      const data = {
+        "username": LadminName,
+        "password": LadminPass,
+      }
+      await axios.post('http://localhost:9000/api/admin/login', data).then((res) => {
+        console.log(res);
+        const adminToken = res.data.token
+        localStorage.setItem('adminToken',adminToken)
+        toast.success("Admin Login Successfully");
+         Nvgt('/adminhome')
+      }).catch((err) => {
+        toast.error(err)
+      })
+    } catch (err) {
+      console.error(err);
     }
    }
   return (

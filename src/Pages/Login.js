@@ -6,8 +6,7 @@ import { Button ,Container} from 'react-bootstrap'
 import axios from 'axios'
 import { toast } from 'react-toastify'
 const Login = () => {
-  const [error,setError] =useState('')
-  const {user,setLogin} = useContext(userContext)
+  const [error] =useState('')
   const Nvgt=useNavigate()
    const Lreffname=useRef()
    const LreffPass=useRef() 
@@ -21,8 +20,8 @@ const Login = () => {
         "password" :newLreffPass
        }
        await axios.post('http://localhost:9000/api/users/login',data).then((res)=>{
-         const token = res.data.token
-       localStorage.setItem('token',token) 
+         const userToken = res.data.token
+       localStorage.setItem('userToken',userToken) 
        toast.success("User login Successfully")
        Nvgt('/')
       }).catch((err)=>{
