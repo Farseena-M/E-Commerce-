@@ -1,24 +1,43 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { userContext } from '../App'
 import { Card, Container} from 'react-bootstrap'
 import {Button} from 'react-bootstrap'
 import { useNavigate} from 'react-router-dom'
 import Navigation from '../Components/Navigation'
 import Footer from '../Components/Footer'
+import axios from 'axios'
+import { toast } from 'react-toastify'
 const Collections = () => {
-  const{product,search,setSearch}=useContext(userContext)
+  const{search,setSearch}=useContext(userContext)
+  const [product,setProduct] =useState([])
   const Nvgt=useNavigate()
+
+  useEffect(()=>{
+    const fetchProducts = async () =>{
+    try{
+      const res = await axios.get('http://localhost:9000/api/users/products')
+       console.log(res.data.data.products);
+      if(res.status === 200){
+       setProduct(res.data.data.products);
+      }
+    }catch (err) {
+      toast.error(err);
+    }
+  }
+  fetchProducts()
+},[])
   
   const Searches=product.filter((val)=>{
     if(search===''){
       return val;
-    }else if(val.productName.toLowerCase().includes(search.toLowerCase())){
+    }else if(val.title.toLowerCase().includes(search.toLowerCase())){
       return val;
     }else{
       return '';
     }
   })
- 
+
+
   return (
     <div style={{backgroundColor:'lightgrey'}}>
       <Navigation/>
@@ -45,11 +64,11 @@ const Collections = () => {
        Searches.map((item)=>(
           <div>
            <Card className="shadow p-5 m-1 bg-body-tertiary rounded" style={{ width: '23rem', height: '28rem', alignItems: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-      <Card.Img variant="top" src={item.productImage}style={{height:"200px",width:'250px'}}/>
+      <Card.Img variant="top" src={item.image}style={{height:"200px",width:'250px'}}/>
       <Card.Body>
-        <Card.Title style={{fontFamily:'serif',textAlign:'center'}}>{item.productName}</Card.Title>
-        <Card.Title style={{fontFamily:'serif',textAlign:'center'}}>Price:{item.Price}</Card.Title><br/><br/>
-        <Button onClick={()=>Nvgt(`/view/${item.id}`)} style={{backgroundColor:'black',border:'none',alignItems:'center'}}>View Product</Button>
+        <Card.Title style={{fontFamily:'serif',textAlign:'center'}}>{item.title}</Card.Title>
+        <Card.Title style={{fontFamily:'serif',textAlign:'center'}}>Price:{item.price}</Card.Title><br/><br/>
+        <Button onClick={()=>Nvgt(`/view/${item._id}`)} style={{backgroundColor:'black',border:'none',alignItems:'center'}}>View Product</Button>
       </Card.Body>
     </Card><br/>
     </div>

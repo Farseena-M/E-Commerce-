@@ -7,6 +7,14 @@ import { useNavigate } from 'react-router-dom'
 
 const Add = () => {
     const Nvgt=useNavigate()
+    
+    /* const [title,setTitle] = useState('')
+    const [description,setDescription] = useState('')
+    const [image,setImage] = useState('')
+    const [price,setPrice] = useState('')
+    const [category,setCategory] = useState('')
+    const [quantity,setQuantity] = useState('') */
+    
     const {product,setProduct}=useContext(userContext)
     const [newProduct,setNewProduct]=useState({
         id:product.length+1,

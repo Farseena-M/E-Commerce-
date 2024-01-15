@@ -19,15 +19,25 @@ import Edit from "./Components/Edit";
 import Add from "./Components/Add";
 import BuyProduct from "./Components/BuyProduct";
 import SignUp from "./Pages/SignUp";
+import axios from 'axios'
+
 export const userContext = createContext()
+
+export const Axios = axios.create({
+  baseUrl:process.env.REACT_APP_LOCALHOST,
+  headers:{
+    "Content-Type":"Application/json",
+    Authorization:localStorage.getItem('userToken')
+  }
+})
+
 function App() {
   const [user,setUser]=useState([])
   const [login,setLogin]=useState(false)
-  const[product,setProduct]=useState(PRODUCTS)
+  const [product,setProduct]=useState(PRODUCTS)
   const [cart,setCart]=useState([])
   const [search,setSearch]=useState('')
   const [buy,setBuy]=useState([])
-
 return (
     <div>
     <userContext.Provider value={{user,setUser,login,setLogin,product,cart,setCart,setProduct,search,setSearch,buy,setBuy}}>

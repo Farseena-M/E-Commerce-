@@ -36,6 +36,8 @@ const Edit = () => {
        <Form>
         <label style={{fontSize:'20px',fontFamily:'italic'}}> Product Name </label><br />
         <input className='shadow' style={{height:'45px',width:'500px',border:'1px solid grey',borderRadius:'8px',textAlign:'center'}} type='text' name='productName' defaultValue={editProduct.productName} onChange={(e)=>setName(e.target.value)}/><br /><br />
+        <label style={{fontSize:'20px',fontFamily:'italic'}}> Product Description </label><br />
+        <input className='shadow' style={{height:'45px',width:'500px',border:'1px solid grey',borderRadius:'8px',textAlign:'center'}} type='text' name='productName' defaultValue={editProduct.productName} onChange={(e)=>setName(e.target.value)}/><br /><br />
         <label style={{fontSize:'20px',fontFamily:'italic'}} > Product Price </label><br />
         <input className='shadow' style={{height:'45px',width:'500px',border:'1px solid grey',borderRadius:'8px',textAlign:'center'}}  type='text' name='Price' defaultValue={editProduct.Price} onChange={(e)=>setPrice(e.target.value)}/><br /><br />
         
