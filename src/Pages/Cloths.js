@@ -9,7 +9,6 @@ import { toast } from 'react-toastify'
 const Cloths = () => {
   const Nvgt=useNavigate()
   const [cloth,setCloth] = useState([])
-  // const babyCloth=PRODUCTS.filter((clth)=>clth.baby==='cloth')
   useEffect(()=>{
     const categoryProduct = async () =>{
      try{
@@ -35,7 +34,7 @@ const Cloths = () => {
       <Card.Body>
         <Card.Title style={{fontFamily:'serif',textAlign:'center'}}>{item.title}</Card.Title>
         <Card.Title style={{fontFamily:'serif',textAlign:'center'}}>Price:{item.price}</Card.Title><br/><br/>
-        <Button onClick={()=>Nvgt(`/view/${item.id}`)} style={{backgroundColor:'black',border:'none'}} variant="primary">View product</Button>
+        <Button onClick={()=>Nvgt(`/view/${item._id}`)} style={{backgroundColor:'black',border:'none'}} variant="primary">View product</Button>
       </Card.Body>
     </Card><br/>
       </div>

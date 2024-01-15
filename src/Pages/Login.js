@@ -20,8 +20,11 @@ const Login = () => {
         "password" :newLreffPass
        }
        await axios.post('http://localhost:9000/api/users/login',data).then((res)=>{
+        console.log(res);
          const userToken = res.data.token
-       localStorage.setItem('userToken',userToken) 
+       localStorage.setItem('userToken',userToken)
+       const userId = res.data.userDetails._id 
+       localStorage.setItem('userId',userId)
        toast.success("User login Successfully")
        Nvgt('/')
       }).catch((err)=>{

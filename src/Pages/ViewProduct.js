@@ -11,6 +11,7 @@ const ViewProduct = () => {
     const { cart } = useContext(userContext)
     const { id } = useParams();
     const [product, setProduct] = useState([])
+    const userId = localStorage.getItem('userId')
 
     useEffect(() => {
         const fetchProduct = async () => {
@@ -26,7 +27,20 @@ const ViewProduct = () => {
     }, [])
     let a = [];
     a.push(product);
-    console.log(product);
+
+    // cart section
+
+    const handleCart = async () => {
+      try{
+        const response = await Axios.post(`http://localhost:9000/api/users/cart/${userId}`,{productId:id})
+        if (response.status === 200){
+            await Axios.get(`http://localhost:9000/api/users/cart/${userId}`)
+            toast.success("Product added to the cart!")
+          }
+      }catch(err){
+        toast.error(err)
+      }
+    }
 
     return (
         <div style={{ backgroundColor: 'lightgrey', position: 'absolute', height: '100%', width: '100%' }}>
@@ -42,8 +56,8 @@ const ViewProduct = () => {
                                         <Card.Title style={{ fontFamily: 'serif', textAlign: 'center' }}>{item.title}</Card.Title>
                                         <Card.Title style={{ fontFamily: 'serif', textAlign: 'center' }}>{item.price}</Card.Title>
                                         {cart.find((crtItm) => crtItm.id === item.id) ?
-                                            <Button onClick={() => Nvgt('/cart')} style={{ backgroundColor: 'black', border: 'none' }}>Go to cart</Button> :
-                                            <Button style={{ backgroundColor: 'black', border: 'none' }}>Add to cart</Button>}
+                                            <Button onClick={() => Nvgt(`/cart/${userId}`)} style={{ backgroundColor: 'black', border: 'none' }}>Go to cart</Button> :
+                                            <Button onClick={handleCart} style={{ backgroundColor: 'black', border: 'none' }}>Add to cart</Button>}
                                     </Card.Body>
                                 </Card><br />
                             </div>
